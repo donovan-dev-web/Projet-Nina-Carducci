@@ -1,5 +1,3 @@
-## README – Projet Nina Carducci
-
 # Projet Nina Carducci — Optimisation SEO & Accessibilité
 
 Ce projet a été réalisé dans le cadre de la formation **Développeur Web** OpenClassrooms.  
@@ -75,16 +73,67 @@ Après audit initial, vous vous engagez à :
 
 ## 📊 Résultats d’audit
 
-📌 **Scores Lighthouse et Wave AVANT / APRÈS optimisation**
+> **Audits réalisés avant puis après optimisation**
+> Référentiels : **Google Lighthouse** & **WAVE Accessibility**
 
-| Critère | Avant | Après |
-|--------|:----:|:----:|
-| Performance | 🔄 À compléter | 🔄 À compléter |
-| Accessibilité | 🔄 À compléter | 🔄 À compléter |
-| Bonnes pratiques | 🔄 À compléter | 🔄 À compléter |
-| SEO | 🔄 À compléter | 🔄 À compléter |
+---
 
-📎 **Ajouter ici les captures d’écran des audits**  
+### 🖥️ Lighthouse — Desktop
+
+#### 📌 Avant Optimisation
+
+| Performance                                                                 | Accessibilité                                                                 | Bonnes pratiques                                                                  | SEO                                                                 |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![](https://img.shields.io/badge/Performance-65-ff4e42?style=for-the-badge) | ![](https://img.shields.io/badge/Accessibilité-68-ff4e42?style=for-the-badge) | ![](https://img.shields.io/badge/Best%20Practices-100-0cce6b?style=for-the-badge) | ![](https://img.shields.io/badge/SEO-70-ffa400?style=for-the-badge) |
+
+📎 **Captures d’écran**
+
+#### 🚀 Après Optimisation (à compléter)
+
+| Performance                                                                     | Accessibilité                                                                     | Bonnes pratiques                                                                     | SEO                                                                     |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| ![](https://img.shields.io/badge/Performance-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/Accessibilité-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/Best%20Practices-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/SEO-NaN-lightgrey?style=for-the-badge) |
+
+📎 **Captures d’écran**
+
+---
+
+### 📱 Lighthouse — Mobile
+
+#### 📌 Avant Optimisation
+
+| Performance                                                                   | Accessibilité                                                                 | Bonnes pratiques                                                                 | SEO                                                                 |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![](https://img.shields.io/badge/Performance-❓-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/Accessibilité-69-ff4e42?style=for-the-badge) | ![](https://img.shields.io/badge/Best%20Practices-92-ffa400?style=for-the-badge) | ![](https://img.shields.io/badge/SEO-75-ffa400?style=for-the-badge) |
+
+
+📎 Captures d’écran
+
+#### 🚀 Après Optimisation (à compléter)
+
+| Performance                                                                     | Accessibilité                                                                     | Bonnes pratiques                                                                     | SEO                                                                     |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| ![](https://img.shields.io/badge/Performance-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/Accessibilité-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/Best%20Practices-NaN-lightgrey?style=for-the-badge) | ![](https://img.shields.io/badge/SEO-NaN-lightgrey?style=for-the-badge) |
+
+📎 Captures d’écran
+
+---
+
+### ♿ Wave — Accessibilité
+
+| Type | Avant | Après |
+|------|:-----:|:-----:|
+| ❌ Erreurs | **17** | NaN |
+| ⚠️ Erreurs de contraste | **3** | NaN |
+| 🔍 Alerts | **7** | NaN |
+| ⭐ Features | **6** | NaN |
+| 🧩 Structure | **16** | NaN |
+| 🧱 ARIA | **10** | NaN |
+| 🏁 Score AIM | **4.7 / 10** | NaN |
+
+
+
+📎 **captures d’écran des audits**  
 _(à compléter)_
 
 ---
@@ -119,13 +168,7 @@ Aucune dépendance supplémentaire requise.
 
 | ID | Titre du Commit | Description               | Lien |
 | -: | --------------- | ------------------------- | ---- |
-| 01 | 🔄 À compléter  | Optimisation images       | 🔗   |
-| 02 | 🔄 À compléter  | Ajout Schema.org          | 🔗   |
-| 03 | 🔄 À compléter  | Correction modale galerie | 🔗   |
-| 04 | 🔄 À compléter  | Accessibilité             | 🔗   |
-
-➡️ **À compléter au fil des livrables**
-Astuce : utiliser l’ID dans les messages de commit pour garder une bonne traçabilité.
+| 01 | Création du repo| Création et clone du projet|[`23eb5a7`](https://github.com/donovan-dev-web/Projet-Booki/commit/23eb5a7)|
 
 ---
 
@@ -135,8 +178,3 @@ Astuce : utiliser l’ID dans les messages de commit pour garder une bonne traç
 📚 Projet réalisé pour OpenClassrooms
 
 ---
-
-## 📌 Statut du projet
-
-✔ En cours d’optimisation
-📝 Parties à compléter : captures Lighthouse/Wave, changelog, rapport d’intervention
