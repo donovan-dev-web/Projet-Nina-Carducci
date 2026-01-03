@@ -175,6 +175,7 @@ Aucune dépendance supplémentaire requise.
 ## 👤 Auteur
 
 **Donovan Chartrain — Développeur Web**
-📚 Projet réalisé pour OpenClassrooms
+
+Projet réalisé pour OpenClassrooms
 
 ---
