@@ -169,6 +169,8 @@ Aucune dépendance supplémentaire requise.
 | ID | Titre du Commit | Description               | Lien |
 | -: | --------------- | ------------------------- | ---- |
 | 01 | Création du repo| Création et clone du projet|[`055476f`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/055476f)|
+| 02 | Balise Meta | Ajout des balises Meta, Schema.org ect.|[`b8791b0`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/b8791b0)|
+| 03 | Optimisation Images | Conversion image Format webp, utilisation srcset |[`b8791b0`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/b8791b0)|
 
 ---
 
