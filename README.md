@@ -171,6 +171,7 @@ Aucune dépendance supplémentaire requise.
 | 01 | Création du repo| Création et clone du projet|[`055476f`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/055476f)|
 | 02 | Balise Meta | Ajout des balises Meta, Schema.org ect.|[`b8791b0`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/b8791b0)|
 | 03 | Optimisation Images | Conversion image Format webp, utilisation srcset |[`fcf8b5c`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/fcf8b5c)|
+| 04 | Correction, Ajustement Texte Alt | Correction du fomulaire et ajout texte alternatif au images |[`941a4b4`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/941a4b4)|
 
 ---
 
