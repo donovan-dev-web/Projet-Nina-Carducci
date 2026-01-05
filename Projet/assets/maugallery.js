@@ -58,12 +58,13 @@
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
-    $(".gallery").on("click", ".mg-prev", () =>
-      $.fn.mauGallery.methods.prevImage(options.lightboxId)
-    );
-    $(".gallery").on("click", ".mg-next", () =>
-      $.fn.mauGallery.methods.nextImage(options.lightboxId)
-    );
+    $(".gallery").on("click", ".mg-prev", function() {
+      $.fn.mauGallery.methods.prevImage(options.lightboxId);
+    });
+
+    $(".gallery").on("click", ".mg-next", function() {
+      $.fn.mauGallery.methods.nextImage(options.lightboxId);
+    });
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
@@ -119,7 +120,9 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
-    prevImage() {
+/* -- Fonction d'origine -- */
+/*
+    prevImage(lightboxId) {
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -156,9 +159,9 @@
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      $(`#${lightboxId} .lightboxImage`).attr("src", $(next).attr("src"));
     },
-    nextImage() {
+    nextImage(lightboxId) {
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -193,8 +196,56 @@
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      $(`#${lightboxId} .lightboxImage`).attr("src", $(next).attr("src"));
+    },*/
+
+    /**
+     * Version corriger des fonction prevImage et nextImages.
+     * Correction de ActiveImage utilisant toujours l'ID,
+     * INdex dimage jamais calculer, correction appliquer en recuperant et en calculant le nouvel index,
+     * Correction sur la construction de la collection d'images.
+     */
+
+    prevImage(lightboxId) {
+      let activeImage = $(`#${lightboxId} .lightboxImage`);
+      let activeSrc = activeImage.attr("src");
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let imagesCollection = [];
+
+      if (activeTag === "all") {
+        $(".item-column img").each(function() { imagesCollection.push(this); });
+      } else {
+        $(".item-column img").each(function() {
+          if ($(this).data("gallery-tag") === activeTag) imagesCollection.push(this);
+        });
+      }
+
+      let index = imagesCollection.findIndex(img => $(img).attr("src") === activeSrc);
+      if (index === -1) return;
+      let prevIndex = (index - 1 + imagesCollection.length) % imagesCollection.length;
+      activeImage.attr("src", $(imagesCollection[prevIndex]).attr("src"));
     },
+
+    nextImage(lightboxId) {
+      let activeImage = $(`#${lightboxId} .lightboxImage`);
+      let activeSrc = activeImage.attr("src");
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let imagesCollection = [];
+
+      if (activeTag === "all") {
+        $(".item-column img").each(function() { imagesCollection.push(this); });
+      } else {
+        $(".item-column img").each(function() {
+          if ($(this).data("gallery-tag") === activeTag) imagesCollection.push(this);
+        });
+      }
+
+      let index = imagesCollection.findIndex(img => $(img).attr("src") === activeSrc);
+      if (index === -1) return;
+      let nextIndex = (index + 1) % imagesCollection.length;
+      activeImage.attr("src", $(imagesCollection[nextIndex]).attr("src"));
+    },
+    
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
@@ -240,7 +291,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      /* Ajout class active + active-tag pour correction indicatif filtre */
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
