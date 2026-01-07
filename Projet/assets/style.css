@@ -116,6 +116,7 @@ body {
 	padding-bottom: 100%;
 
 }
+/*
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -132,7 +133,7 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
-}
+}*/
 
 .quote {
 	font-family: 'Spectral';
