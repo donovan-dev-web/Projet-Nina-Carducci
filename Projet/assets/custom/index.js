@@ -1,14 +1,14 @@
-import { initCarousel } from "./carousel.js";
-import { initGallery } from "./gallery.js";
-import { initModal } from "./modal.js";
+import { initCarousel } from "./carousel min.js";
+import { initGallery } from "./gallery min.js";
+import { initModal } from "./modal min.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-	// 1️⃣ Initialiser la modal (création du DOM)
+	// Initialiser la modal (création du DOM)
 	const modal = initModal();
 
-	// 2️⃣ Initialiser la gallery en passant la modal
+	// Initialiser la gallery en passant la modal
 	initGallery(modal);
 
-	// 3️⃣ Initialiser le carrousel
+	// Initialiser le carrousel
 	initCarousel();
 });
