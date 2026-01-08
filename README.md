@@ -173,6 +173,8 @@ Aucune dépendance supplémentaire requise.
 | 03 | Optimisation Images | Conversion image Format webp, utilisation srcset |[`fcf8b5c`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/fcf8b5c)|
 | 04 | Correction, Ajustement Texte Alt | Correction du fomulaire et ajout texte alternatif au images |[`941a4b4`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/941a4b4)|
 | 05 | Correction JS et MauGallery | Correction des bugs sur les bouton de filtres et le preview/next de la modal |[`0bb506c`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/0bb506c)|
+| 06 | Refonte JS Natif | Suppression de Bootstrap et Maugallery Par une version Nativ |[`bf6e691`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/bf6e691)|
+| 07 | Minification CSS et JS | Minification du style css et Du JS natif remplacant bootrstrap et MauGallery |[`bf6e691`](https://github.com/donovan-dev-web/Projet-Nina-Carducci/commit/bf6e691)|
 
 ---
 

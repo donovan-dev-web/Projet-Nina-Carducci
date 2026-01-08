@@ -1,6 +1,6 @@
-import { initCarousel } from "./carousel min.js";
-import { initGallery } from "./gallery min.js";
-import { initModal } from "./modal min.js";
+import { initCarousel } from "./Modules-min/carousel min.js";
+import { initGallery } from "./Modules-min/gallery min.js";
+import { initModal } from "./Modules-min/modal min.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	// Initialiser la modal (création du DOM)
