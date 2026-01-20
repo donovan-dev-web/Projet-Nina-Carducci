@@ -18,6 +18,8 @@ L’objectif est d’optimiser le site vitrine de **Nina Carducci**, photographe
 | Site original | https://nina-carducci.github.io |
 | Repo d’origine | https://github.com/OpenClassrooms-Student-Center/Nina-Carducci-Dev |
 | ➝ Repo optimisé | https://github.com/donovan-dev-web/Projet-Nina-Carducci |
+| Rapport d'interventions | https://github.com/donovan-dev-web/Projet-Nina-Carducci/blob/main/docs/Rapport%20intervention%20-%20Nina%20Carducci.pdf |
+
 ---
 
 ## 🧑‍💻 Contexte du projet
